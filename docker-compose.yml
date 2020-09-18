@@ -1,0 +1,21 @@
+version: "3"
+services:
+    sharepostapp:
+        build: .
+        depends_on: 
+            - mariadb
+        ports:
+            - "8080:80"
+        volumes:
+            - .:/var/www/html/sharepostapp
+        links: 
+            - mariadb:mariadb
+    mariadb:
+        image: mariadb:10.1.21
+        ports: 
+            - "13306:3306"
+        environment:
+            - MYSQL_DATABASE=shareposts
+            - MYSQL_ROOT_PASSWORD=t]a03p?;OfWk
+            - MYSQL_USER=shareposts_user
+            - MYSQL_PASSWORD=t]a03p?;OfWk

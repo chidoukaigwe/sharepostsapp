@@ -1,17 +1,17 @@
 <?php
 
   //DB params
-  define('DB_HOST', 'localhost');
-  define('DB_USER', 'chidodes_phpmvc');
+  define('DB_HOST', '298b11b2739f');
+  define('DB_USER', 'root');
   define('DB_PASS', 't]a03p?;OfWk');
-  define('DB_NAME', 'chidodes_shareposts');
+  define('DB_NAME', 'shareposts');
 
   //App Root
   //dirname — Returns a parent directory's path
   define('APPROOT', dirname(dirname(__FILE__)));
 
   //URL Root
-  define('URLROOT', 'http://myframework.chido-designs.co.uk	');
+  define('URLROOT', 'http://localhost:8080');
 
   //Sitename
   define('SITENAME', 'SharePosts');
