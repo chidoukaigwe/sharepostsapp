@@ -18,7 +18,7 @@ This application is wrapped within a docker container:
 3. Apache image
 
 ## Docker Container Instructions
-- `docker-composer up --build` 
+- `docker-compose up --build` 
 -  `docker ps` - find and copy  container id
 - `docker exec -it {containerid} bash`
 
