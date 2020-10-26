@@ -1,0 +1,7 @@
+version: "2"
+services:
+    rancher-sharepostapp:
+        image: chidodesigns/sharepostapp:latest
+        labels: {io.rancher.container.pull_image: always}
+        stdin_open: true
+        tty: true
